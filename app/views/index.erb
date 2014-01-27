@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+  <%@answers.each do |word|%>
+  <%= word %>
+  <%end%>
+
+  <form name="input" action="/word_search" method="post">
+  find anagrams for: <input type="text" name="user_word">
+  <input type="submit" value="Submit">
+  </form>
+</div>
